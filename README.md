@@ -41,4 +41,4 @@ The project follows a modular Industrial Pipeline:
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/yourusername/surya-2026.git](https://github.com/yourusername/surya-2026.git)
+   git clone [https://github.com/CodexMe01/surya-2026.git](https://github.com/CodexMe01/surya-2026.git)
