@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Surya 2026 - Solar Investment Auditor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="box">
+        <h2>Solar Viability & Savings Estimator</h2>
+        <p>Enter your details below to audit your rooftop's solar potential.</p>
+
+        <form action="{{ url_for('predict')}}" method="post">
+  <input type="number" name="monthly_bill" placeholder="Enter Avg monthly bill Amount" required />
+  <input type="number" name="roof_area" placeholder="Enter the Area" required />
+  <input type="text" name="city_state" placeholder="Enter City/State" required />
+  <input type="number" name="shading_perc" placeholder="Enter Percentage" required />
+  
+  <button type="submit">Predict</button>
+</form>
+
+        <h3 class="result">{{ prediction_text }}</h3>
+
+      </div>
+    </div>
+  </body>
+</html>
